@@ -1,1 +1,6 @@
 theme: jekyll-theme-minimal
+
+webrick:
+  headers:
+    My-Header: My-Value
+    My-Other-Header: My-Other-Value
