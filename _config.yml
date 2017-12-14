@@ -1,7 +1,5 @@
 title: Clint P. George
-twitter_username: clintpgeorge
-github_username: clintpgeorge
-lsi: true 
+lsi: false 
 safe: true
 highlighter: rouge
 gist:
@@ -10,32 +8,4 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-# Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 10
-paginate_path: /page:num/
 
-# Front Matter Defaults
-defaults:
-  # _posts
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: post
-      read_time: true
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: clintpg@ufl.edu
-  facebook:
-  flickr:
-  github: clintpgeorge
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: clintpgeorge
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
