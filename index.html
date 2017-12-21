@@ -23,7 +23,37 @@ See http://creativecommons.org/licenses/by/4.0
 		    padding-left: 10px;
 		    padding-bottom: 0px;
 		    width: 250px;
-		}		      	
+		}	
+		span.cpg-badge {
+		  min-width: 3rem;
+		  padding: 3px 3px 3px 3px;
+		  margin-left: 10px;
+		  text-align: center;
+		  font-size: 1rem;
+		  line-height: 22px;
+		  height: 22px;
+		  color: #757575;
+		  float: none;
+		  -webkit-box-sizing: border-box;
+		          box-sizing: border-box;
+		}
+
+		span.cpg-badge.new {
+		  font-weight: 300;
+		  font-size: 0.8rem;
+		  color: #fff;
+		  background-color: #26a69a;
+		  border-radius: 2px;
+		  padding: 3px 3px 3px 3px;
+		}
+
+		span.cpg-badge.new:after {
+		  content: " new";
+		}
+
+		span.cpg-badge[data-badge-caption]::after {
+		  content: " " attr(data-badge-caption);
+		}	      	
       </style>
 
       <!--Let browser know website is optimized for mobile-->
@@ -80,7 +110,7 @@ See http://creativecommons.org/licenses/by/4.0
 	            </div>
             </div>
             <div class="nav-wrapper">
-              <ul id="nav-mobile" class="left">
+              <ul id="nav-mobile" class="left hide-on-med-and-up">
                 <li><a href="#home" class="black-text text-lighten-2">Home</a></li>
                 <li><a href="#education" class="black-text text-lighten-2">Education</a></li>
                 <li><a href="#positions" class="black-text text-lighten-2">Positions</a></li>
@@ -202,41 +232,41 @@ See http://creativecommons.org/licenses/by/4.0
 	 						<b>P. George, C.</b> and Doss, H. (2017). Principled Selection of Hyperparameters in the Latent Dirichlet Allocation
 							Model. <i>Journal of Machine Learning Research</i>. Under minor revision. 
 							<a href="#" target="_blank">
-								<span class="new badge orange lighten-1" data-badge-caption="article"></span>
+								<span class="new cpg-badge orange lighten-1" data-badge-caption="article"></span>
 							</a>
-							<a href="#" target="_blank">
-								<span class="new badge blue" data-badge-caption="code"></span>
+							<a href="https://github.com/clintpgeorge/ldamcmc" target="_blank">
+								<span class="new cpg-badge blue no-float" data-badge-caption="code"></span>
 							</a>
-							<span class="new badge"></span><br/>
+							<span class="new cpg-badge"></span><br/>
 	 					</li>
 	 					<li>
 	 						Grant, C.,  <b>P. George, C.</b>, Kanjilal, V., Nirkhiwale, S., Wang, D. Z., and Wilson, J. N. (2015). A Topic-Based Search, Visualization, and Exploration System, <i>FLAIRS-28</i>, Hollywood, Florida, USA.
 							<a href="http://www.aaai.org/ocs/index.php/FLAIRS/FLAIRS15/paper/view/10445" target="_blank">
-								<span class="new badge orange lighten-1" data-badge-caption="article"></span>
+								<span class="new cpg-badge orange lighten-1" data-badge-caption="article"></span>
 							</a><br/>
 	 					</li>
 					 	<li>
 					 		<b>P. George, C.</b>,  Puri, S., Wang, D. Z., Wilson, J. N., and Hamilton, W. (2014). SMART Electronic Legal Discovery via Topic Modeling. <i>FLAIRS-27</i>, Pensacola, Florida, USA.
 					 		<a href="http://www.aaai.org/ocs/index.php/FLAIRS/FLAIRS14/paper/view/7865" target="_blank">
-								<span class="new badge orange lighten-1" data-badge-caption="article"></span>
+								<span class="new cpg-badge orange lighten-1" data-badge-caption="article"></span>
 							</a><br/>
 					 	</li>
 					 	<li>
 					 		<b>P. George, C.</b>,  Wang, D. Z., Wilson, J. N., Epstein, L. M., Garland, P., Suh, A. (2012). A Machine Learning Based Topic Exploration and Categorization on Surveys.<i>ICMLA</i>, Boca Raton, Florida, USA.
 					 		<a href="http://dx.doi.org/10.1109/ICMLA.2012.132" target="_blank">
-								<span class="new badge orange lighten-1" data-badge-caption="article"></span>
+								<span class="new cpg-badge orange lighten-1" data-badge-caption="article"></span>
 							</a><br/>
 					 	</li>
 					 	<li>
 					 		Grant, C.,  <b>P. George, C.</b>, Jenneisch, C., and Wilson, J. N. (2011). Online Topic Modeling for Real-time Twitter Search. <i>TREC Notebook</i>. NIST. USA.
 					 		<a href="http://trec.nist.gov/pubs/trec20/papers/Morpheus.microblog.update.pdf" target="_blank">
-								<span class="new badge orange lighten-1" data-badge-caption="article"></span>
+								<span class="new cpg-badge orange lighten-1" data-badge-caption="article"></span>
 							</a><br/>
 					 	</li>
 					 	<li>
 					 		Grant, C.,  <b>P. George, C.</b>, Gumbs, J., Wilson, J. N., and Dobbins, P. D. (2010). Morpheus: A Deep Web Question Answering System. <i>iiWAS</i>. Paris, France.
 					 		<a href="http://dl.acm.org/citation.cfm?id=1967629" target="_blank">
-								<span class="new badge orange lighten-1" data-badge-caption="article"></span>
+								<span class="new cpg-badge orange lighten-1" data-badge-caption="article"></span>
 							</a>
 							<br/>
 					 	</li>
@@ -246,13 +276,13 @@ See http://creativecommons.org/licenses/by/4.0
 					 	<li>
 					 		<b>P. George, C.</b> (2015). Latent Dirichlet Allocation: Hyperparameter Selection and Applications to Electronic Discovery. Ph. D. dissertation. University of Florida. 
 					 		<a href="https://clintpgeorge.files.wordpress.com/2015/12/clint-phd-thesis.pdf" target="_blank">
-								<span class="new badge orange lighten-1" data-badge-caption="article"></span>
+								<span class="new cpg-badge orange lighten-1" data-badge-caption="article"></span>
 							</a><br/>
 					 	</li>
 					 	<li>
 					 		<b>P. George, C.</b> (2010). A Realm based Question Answering System using Probabilistic Modeling. MS Thesis. University of Florida. 
 					 		<a href="https://clintpgeorge.files.wordpress.com/2015/12/clintpgeorge-ms-thesis.pdf" target="_blank">
-								<span class="new badge orange lighten-1" data-badge-caption="article"></span>
+								<span class="new cpg-badge orange lighten-1" data-badge-caption="article"></span>
 							</a><br/>
 					 	</li>
 					</ul>
@@ -262,13 +292,13 @@ See http://creativecommons.org/licenses/by/4.0
 					 	<li>
 					 		<b>P. George, C.</b>, Glenn, T. C., Wilson, J.N., Gader, P. D., Fuentes, C., Gopal, V., and Casella, G. (2011). Topic Learning and Inference Using Dirichlet Allocation Product Partition Models and Hybrid Metropolis Search. Computer and Information Science and Engineering, University of Florida.
 					 		<a href="https://clintpgeorge.files.wordpress.com/2016/05/uf-cise-rep-2011-520.pdf" target="_blank">
-					 			<span class="new badge orange lighten-1" data-badge-caption="article"></span>
+					 			<span class="new cpg-badge orange lighten-1" data-badge-caption="article"></span>
 							</a><br/>
 					 	</li>
 					 	<li>
 					 		Fuentes, C., Gopal, V., Casella, G., <b>P. George, C.</b>, Glenn, T. C., Wilson, J.N., and Gader, P. D., (2011). Dirichlet Allocation Using Product Partition Models. Computer and Information Science and Engineering, University of Florida.
 					 		<a href="https://clintpgeorge.files.wordpress.com/2016/05/uf-cise-rep-2011-519.pdf" target="_blank">
-					 			<span class="new badge orange lighten-1" data-badge-caption="article"></span>
+					 			<span class="new cpg-badge orange lighten-1" data-badge-caption="article"></span>
 							</a><br/>
 					 	</li>
 					</ul>
@@ -284,18 +314,17 @@ See http://creativecommons.org/licenses/by/4.0
 	            	<b>Teaching</b>
 	            	<ul class="browser-default" >
 					 	<li>
-	            			Exploratory Data Analysis (December 2016). 	            			
+	            			Exploratory Data Analysis (December 2016). DSI/Informatics Institute, University of Florida. 
+	            			<i>Workshop Instructor</i>. 	            			
 							<a href="https://github.com/clintpgeorge/tutorials/blob/master/exploratory-data-analysis/exploratory-data-analysis.pdf" target="_blank">
-								<span class="new badge red" data-badge-caption="slides"></span>
+								<span class="new cpg-badge red" data-badge-caption="slides"></span>
 							</a>
 							<a href="https://github.com/clintpgeorge/tutorials/blob/master/exploratory-data-analysis/Exploratory-Data-Analysis-Fall-2016-Instructor.ipynb" target="_blank">
-								<span class="new badge blue" data-badge-caption="Jupyter notebook"></span>
-							</a> <br/>
-							DSI/Informatics Institute, University of Florida. 
-	            			<i>Workshop Instructor</i>. 
+								<span class="new cpg-badge blue" data-badge-caption="Jupyter notebook"></span>
+							</a> 
 						</li>
 					 	<li>
-	            			COP 3502: Programming Fundamentals for CIS Majors I (Spring 2013). <br/>
+	            			COP 3502: Programming Fundamentals for CIS Majors I (Spring 2013). 
 	            			Computer and Information Science and Engineering, University of Florida. 
 	            			<i>Teaching TA/Lab Instructor</i>.
 						</li>
@@ -303,59 +332,58 @@ See http://creativecommons.org/licenses/by/4.0
 					<b>Guest Lectures and Seminars</b>
 	            	<ul class="browser-default" >
 					 	<li>
-	            			STA 6707: Analysis of Multivariate Data (March 2017). 			
+	            			STA 6707: Analysis of Multivariate Data (March 2017). Introduction to Deep Learning. 
+	            			Department of Statistics, University of Florida. <i>Guest Lecture</i>. 			
 							<a href="https://github.com/clintpgeorge/tutorials/blob/master/deep-learning/deep-learning.pdf" target="_blank">
-								<span class="new badge red" data-badge-caption="slides"></span>
+								<span class="new cpg-badge red" data-badge-caption="slides"></span>
 							</a>
 							<a href="https://github.com/clintpgeorge/tutorials/tree/master/deep-learning" target="_blank">
-								<span class="new badge blue" data-badge-caption="R code"></span>
-							</a> <br/> 
-							Introduction to Deep Learning. <br/>
-	            			Department of Statistics, University of Florida. <i>Guest Lecture</i>. 	            
+								<span class="new cpg-badge blue" data-badge-caption="R code"></span>
+							</a>            
 						</li>
 					 	<li>
 	            			Topic Models for Text Analysis (March 2017). 
-							<a href="https://github.com/clintpgeorge/tutorials/blob/master/topic-models/topic-models-dsi-talk-March-2017.pdf" target="_blank">
-								<span class="new badge red" data-badge-caption="slides"></span>
-							</a> <br/>
-							Data Science and Informatics Symposium, University of Florida. 
+	            			Data Science and Informatics Symposium, University of Florida. 
 	            			<i>Workshop</i>. 
+							<a href="https://github.com/clintpgeorge/tutorials/blob/master/topic-models/topic-models-dsi-talk-March-2017.pdf" target="_blank">
+								<span class="new cpg-badge red" data-badge-caption="slides"></span>
+							</a> 							
 						</li>
 					 	<li>
-	            			CAP 5771: Introduction to Data Science (October 2015). <br/> 
-	            			Exploratory Data Analysis and Hypothesis Testing. <br/>
+	            			CAP 5771: Introduction to Data Science (October 2015). 
+	            			Exploratory Data Analysis and Hypothesis Testing. 
 	            			Computer and Information Science and Engineering, University of Florida. 
 	            			<i>Guest Lecture.</i> 
 						</li>
 					 	<li>
-							CAP 4773: Projects in Data Science (October 2014). <br/> 
-							Introduction to Topic Models. <br/>
+							CAP 4773: Projects in Data Science (October 2014). 
+							Introduction to Topic Models. 
 							Computer and Information Science and Engineering, University of Florida. 
 							<i>Guest Lecture.</i> 
 						</li>
 					 	<li>
-							CIS 6930: Elements of Statistical Learning (March 2010).  <br/> 
-							Additive Models and Trees. <br/>
+							CIS 6930: Elements of Statistical Learning (March 2010). 
+							Additive Models and Trees.
 							Department of Statistics, University of Florida.
 							<i>Seminar</i>. 
 						</li>
 					 	<li>
-							Latent Dirichlet Allocation: Hyperparameter Selection and Applications to Electronic Discovery (October 2015). <br/>
+							Latent Dirichlet Allocation: Hyperparameter Selection and Applications to Electronic Discovery (October 2015). 
 							Machine Learning Reading Group, University of Florida.
 							<i>Seminar</i>. 
 						</li>
 					 	<li>
-							A Topic-Based Search, Visualization, and Exploration System (May 2015). <br/> 
+							A Topic-Based Search, Visualization, and Exploration System (May 2015). 
 							FLAIRS-28, Hollywood, FL, USA.
 							<i>Conference Talk</i>. 
 						</li>
 					 	<li>
-							SMART Electronic Legal Discovery via Topic Modeling (May 2014). <br/> 
+							SMART Electronic Legal Discovery via Topic Modeling (May 2014). 
 							FLAIRS-27, Pensacola, FL, USA.
 							<i>Conference Talk</i>. 
 						</li>
 					 	<li>
-							A Machine Learning Based Topic Exploration and Categorization on Surveys (December 2012). <br/> 
+							A Machine Learning Based Topic Exploration and Categorization on Surveys (December 2012). 
 							ICMLA-2012, Boca Raton, FL, USA.
 							<i>Conference Talk</i>.
 						</li>
