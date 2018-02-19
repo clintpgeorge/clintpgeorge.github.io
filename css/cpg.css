@@ -1,0 +1,42 @@
+/*!
+* Adapted from Materialize
+* 
+*/
+
+.logo {
+    display: inline-block;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    width: 250px;
+}	
+span.cpg-badge {
+  min-width: 3rem;
+  padding: 3px 3px 3px 3px;
+  margin-left: 3px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 22px;
+  height: 22px;
+  color: #757575;
+  float: none;
+  -webkit-box-sizing: border-box;
+}
+
+span.cpg-badge.new {
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #26a69a;
+  border-radius: 2px;
+  padding: 3px 3px 3px 3px;
+}
+
+span.cpg-badge.new:after {
+  content: " new";
+}
+
+span.cpg-badge[data-badge-caption]::after {
+  content: " " attr(data-badge-caption);
+}
