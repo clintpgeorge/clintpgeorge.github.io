@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CS 344/386: Artificial Intelligence</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="cs-344386-artificial-intelligence">CS 344/386: Artificial Intelligence</h1>
+<p><strong>Fall 2019</strong></p>
+<p>This course gives a broad introduction to Artificial Intelligence and Machine Learning.</p>
+<ul>
+<li><a href="#cs-344386-artificial-intelligence">CS 344/386: Artificial Intelligence</a>
+<ul>
+<li><a href="#instructor">Instructor</a></li>
+<li><a href="#teaching-assistants">Teaching Assistants</a></li>
+<li><a href="#meetings">Meetings</a></li>
+<li><a href="#recommended-books">Recommended Books</a></li>
+<li><a href="#course-eligibility-and-requirements">Course Eligibility and Requirements</a></li>
+<li><a href="#grading-policy-tentative">Grading Policy (tentative)</a></li>
+<li><a href="#academic-honesty">Academic Honesty</a></li>
+<li><a href="#course-schedule">Course Schedule</a></li>
+<li><a href="#student-seminars">Student Seminars</a></li>
+<li><a href="#term-projects">Term Projects</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="instructor">Instructor</h2>
+<p><a href="https://www.iitgoa.ac.in/~clint">Clint P. George</a> — clint [at] iitgoa [dot] ac [dot] in — Office: F9, New Academic Block A</p>
+<h2 id="teaching-assistants">Teaching Assistants</h2>
+<ul>
+<li>Shruti Shet</li>
+<li>Rizwan Alam</li>
+</ul>
+<h2 id="meetings">Meetings</h2>
+<ul>
+<li>Lectures: Tue (8:30-10:25am, LT1) — Thu (10:30-11:25am, LT2) — Fri (11:30am-12:25pm, CL2)</li>
+<li>Labs: Wed (8:30-11:25am, Lab)</li>
+<li>Office hours: Tue (10:00am-11:00am) — Thu (11:30am-12:30pm)</li>
+</ul>
+<h2 id="recommended-books">Recommended Books</h2>
+<ol>
+<li>
+<p>Artificial Intelligence 3e: A Modern Approach (AIMA) by <em>Russel and Norvig (2015)</em></p>
+</li>
+<li>
+<p><a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mitchell/ftp/mlbook.html">Machine Learning</a> by <em>Mitchell (2009)</em></p>
+</li>
+<li>
+<p>Pattern Recognition and Machine Learning (Information Science and Statistics) by <em>Bishop (2010)</em></p>
+</li>
+</ol>
+<h2 id="course-eligibility-and-requirements">Course Eligibility and Requirements</h2>
+<p>This is a core course designed for the fifth semester Computer Science and Engineering undergraduate students. Knowledge in computer programming is required.</p>
+<p>Course prerequisites: CS 113, MA106, CS215, CS218, MA214</p>
+<h2 id="grading-policy-tentative">Grading Policy (tentative)</h2>
+<ul>
+<li>
+<p><em>CS344</em>: Quiz 1 (10%) — Midterm (25%) — Quiz 2 (10%) — Seminar (10%) — Final (35%) — Class Participation (10%)</p>
+</li>
+<li>
+<p><em>CS386</em>: 3-4 lab assignments/projects (60%) — Term Project (30%) — Class Participation (10%)</p>
+</li>
+</ul>
+<h2 id="academic-honesty">Academic Honesty</h2>
+<p>We expect that every student follows the highest standards of integrity and academic honesty. Copying/sharing code in exams, homeworks, lab sessions are not permitted. See the IIT Goa policy for academic malpractices.</p>
+<h2 id="course-schedule">Course Schedule</h2>
+<p>Note: This is a tentative course schedule. It will be updated often. Also, <em>log on to <a href="https://classroom.google.com/">Classroom</a></em> to see lecture slides, additional course materials, and announcements.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">S/N</th>
+<th style="text-align:left">Topic</th>
+<th style="text-align:left">Resources</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:left">k-Nearest Neigbhor (k-NN) Classifiers</td>
+<td style="text-align:left"><a href="https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/">kNN</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:left">Course Introduction and What's Artificial Intelligence?</br> Reading: AIMA Sections 1.1 - 1.4</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:left">Problem solving agents and introduction to search problems</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:left">Python tutorial</td>
+<td style="text-align:left">e.g. <a href="https://github.com/gumption/Python_for_Data_Science">Python for Data Science</a>, <a href="http://nbviewer.jupyter.org/github/phelps-sg/python-bigdata/blob/master/src/main/ipynb/intro-python.ipynb">Introduction to Python</a></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:left">Uniformed Search : breadth-first search, depth-first search, and uniform-cost search Reading: AIMA Sections 3.1 - 3.2, breadth-first search, depth-first search</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:left">Informed Search: heuristics, greedy search</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:left">A* search</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:left">A* search: properties, examples; Graph Search algorithms</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:left">Interpreting Line Drawings</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:left">Constraint satisfaction problems, backtracking</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:left">Constraint satisfaction problems: variable and value ordering, filtering</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:left">Constraint satisfaction problems: filtering, problem structure</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:left">Constraint satisfaction problems: improving problem structure; Local search: <a href="https://en.wikipedia.org/wiki/Hill_climbing">hill climbing</a>, <a href="https://en.wikipedia.org/wiki/Simulated_annealing">simulated annealing</a> Reading: <a href="http://www.cs.jhu.edu/~ayuille/courses/Stat202C-Spring10/ga_tutorial.pdf">genetic algorithms</a></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:left">k-means clustering</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:left">Topics in clustering: partition-based and bottom-up approaches</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">16</td>
+<td style="text-align:left">The Perceptron learning algorithm</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">17</td>
+<td style="text-align:left">Limiations of the Perceptron learning: improvements, the notion of the margin, overfitting, large margin classifiers</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">18</td>
+<td style="text-align:left">Probability: review</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">19</td>
+<td style="text-align:left">Probability: The Product rule, the Chain rule, Bayes' rule</td>
+<td style="text-align:left"><a href="https://www.youtube.com/watch?v=BrK7X_XlGB8">Bayesian Thinking</a> <a href="https://www.youtube.com/watch?v=EbyUsf_jUjk">Bayes' rule - an intuitive explanation</a></td>
+</tr>
+<tr>
+<td style="text-align:center">20</td>
+<td style="text-align:left">Introduction to Artificial Neural Networks by A. Gupta</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">21</td>
+<td style="text-align:left">Markov Models</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">22</td>
+<td style="text-align:left">Bayes' net: representation</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">23</td>
+<td style="text-align:left">Bayes' net: independence</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">24</td>
+<td style="text-align:left">Bayes' net: independence</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">25</td>
+<td style="text-align:left">Bayes' net: inference</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">26</td>
+<td style="text-align:left">Bayes' net: inference</td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="student-seminars">Student Seminars</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">S/N</th>
+<th style="text-align:center">Date</th>
+<th style="text-align:left">Title</th>
+<th style="text-align:left">Resources</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">October 24</td>
+<td style="text-align:left"><strong>Adversarial Search in Context Game: Mini-Max Search</strong> by  Neeraj Khatri, Ujjawal Tiwari, Raj Jagtap</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Seminars/Team_1/CS-344-Seminar-Team-1-Abstract.pdf">abstract</a>,  <a href="AI-FALL-2019/Seminars/Team_1/CS-344-Seminar-Team-1-Slides.pptx">slides</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">October 22</td>
+<td style="text-align:left"><strong>Improving local search: tabu search vs simulated annealing</strong> by Pallav Mathur, Dushyant Chetiwal, Tejas Mayekar</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Seminars/Team_2/CS-344-Seminar-Team-2-Abstract.pdf">abstract</a>, <a href="AI-FALL-2019/Seminars/Team_2/CS-344-Seminar-Team-2-Slides.pptx">slides</a></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">October 29</td>
+<td style="text-align:left"><strong>Google PageRank Algorithm and it’s Modification</strong> by Raj Hansini Khoiwal, Pulaksh Garg, Chetan Rajput</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Seminars/Team_3/CS-344-Seminar-Team-3-Abstract.pdf">abstract</a>, <a href="AI-FALL-2019/Seminars/Team_3/CS-344-Seminar-Team-3-Slides.pptx">slides</a></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">October 16</td>
+<td style="text-align:left"><strong>Adversarial search in the context of a game: Alpha-Beta pruning</strong> by Bhavam Gupta, Naresh Kumar Kaushal, Rajat Kumar Dalai</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Seminars/Team_4/CS-344-Seminar-Team-4-Abstract.pdf">abstract</a>, <a href="AI-FALL-2019/Seminars/Team_4/CS-344-Seminar-Team-4-Slides.pptx">slides</a></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">October 22</td>
+<td style="text-align:left"><strong>Ensemble Learning - Bagging and Random Forest</strong> by Rahul Kashyap, Muskan Jain, Priyanshu Singh</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Seminars/Team_5/CS-344-Seminar-Team-5-Abstract.pdf">abstract</a>, <a href="AI-FALL-2019/Seminars/Team_5/CS-344-Seminar-Team-5-Slides.pptx">slides</a></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">October 23</td>
+<td style="text-align:left"><strong>Ensemble Learning: Boosting</strong> by Vishrut Maheshwari, Harsh Dubey, Mehul Saxena</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Seminars/Team_6/CS-344-Seminar-Team-6-Abstract.pdf">abstract</a>, <a href="AI-FALL-2019/Seminars/Team_6/CS-344-Seminar-Team-6-Slides.pptx">slides</a></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">October 16</td>
+<td style="text-align:left"><strong>Decision Trees for Regression</strong> by Abhinav Kumar, Paras Yadav, Rahul Salunke</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Seminars/Team_7/CS-344-Seminar-Team-7-Abstract.pdf">abstract</a>, <a href="AI-FALL-2019/Seminars/Team_7/CS-344-Seminar-Team-7-Slides.pptx">slides</a></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">October 30</td>
+<td style="text-align:left"><strong>Interpretation of Line Diagrams and Waltz Algorithm</strong> by Advaith Alenkrith, V. Prakhyath Sree Harsha, Maganuru Jayasurya</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Seminars/Team_8/CS-344-Seminar-Team-8-Abstract.pdf">abstract</a>, <a href="AI-FALL-2019/Seminars/Team_8/CS-344-Seminar-Team-8-Slides.pptx">slides</a></td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">October 30</td>
+<td style="text-align:left"><strong>Expectimax Search</strong> by Abhay Sharma, Rahul Ratneshwar Mandal, Gorthi Jaswanth</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Seminars/Team_9/CS-344-Seminar-Team-9-Abstract.pdf">abstract</a>, <a href="AI-FALL-2019/Seminars/Team_9/CS-344-Seminar-Team-9-Slides.pptx">slides</a></td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">October 21</td>
+<td style="text-align:left"><strong>Genetic Algorithms</strong> by Deepak Das, Anshul Sharma, Nabh Spandan</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Seminars/Team_10/CS-344-Seminar-Team-10-Abstract.pdf">abstract</a>, <a href="AI-FALL-2019/Seminars/Team_10/CS-344-Seminar-Team-10-Slides.pptx">slides</a></td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">October 23</td>
+<td style="text-align:left"><strong>Decision Tree for Classification</strong> by Kalyani Goyal, Rahul Bhaviskar, Ajay Meena</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Seminars/Team_11/CS-344-Seminar-Team-11-Abstract.pdf">abstract</a>,  <a href="AI-FALL-2019/Seminars/Team_11/CS-344-Seminar-Team-11-Slides.pptx">slides</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="term-projects">Term Projects</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">S/N</th>
+<th style="text-align:center">Date</th>
+<th style="text-align:left">Title</th>
+<th style="text-align:left">Resources</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">November 28</td>
+<td style="text-align:left"><strong>Retina Damage Detection for Diabetic Patients</strong>   by Raj Jagtap, Neeraj Khatri, Ujjawal Tiwari, Raj Hansini Khoiwal, Pulaksh Garg</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Term_Project/Team_1/Team_1_poster.pdf">poster</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">November 28</td>
+<td style="text-align:left"><strong>Forgery Detection</strong>   by Advaith Alenkrith, Gorthi Jaswanth, V. Prakhyath Sree Harsha, Maganuru Jayasurya</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Term_Project/Team_2/Team_2_poster.pdf">poster</a></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">November 28</td>
+<td style="text-align:left"><strong>Face Detection</strong>   by Naresh Kumar Kaushal, Rajat Kumar Dalai, Bhavam Gupta, Priyanshu Singh</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Term_Project/Team_3/Team_3_poster.pdf">poster</a></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">November 28</td>
+<td style="text-align:left"><strong>Emotion Recognition using Speech Analysis</strong>   by Muskan Jain, Rahul Kashyap, Kalyani Goyal, Rahul Baviskar</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Term_Project/Team_4/Team_4_poster.pdf">poster</a></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">November 28</td>
+<td style="text-align:left"><strong>Sentiment Analysis</strong>   by Vishrut Maheshwari, Harsh Dubey, Chetan Rajput, Rahul Salunke</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Term_Project/Team_5/Team_5_poster.pdf">poster</a></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">November 28</td>
+<td style="text-align:left"><strong>Detection of Pneumonia from Chest X-Ray Images using Deep CNN</strong>   by Abhinav Kumar, Paras Yadav, Mehul Saxena, Rahul Ratneshwar Mandal</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Term_Project/Team_6/Team_6_poster.pdf">poster</a></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">November 28</td>
+<td style="text-align:left"><strong>Stock Market Predictor</strong>   by Deepak Das, Anshul Sharma, Nabh spandan, Abhay Sharma</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Term_Project/Team_7/Team_7_poster.pdf">poster</a></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">November 28</td>
+<td style="text-align:left"><strong>Image to text conversion</strong>   by Ajay Meena, Tejas Mayekar, Pallav Mathur, Dushyant Chetiwal</td>
+<td style="text-align:left"><a href="AI-FALL-2019/Term_Project/Team_8/Team_8_poster.pdf">poster</a></td>
+</tr>
+</tbody>
+</table>
+
+    </body>
+    </html>

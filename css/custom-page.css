@@ -1,0 +1,36 @@
+/* To adjust the top padding for the site body */
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+
+/* Style for the jumbotron node */
+.jumbotron{
+	background-position:center;
+	background-size: cover;
+	padding:25px 25px 25px 25px;
+	margin-bottom:60px;
+}
+
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}

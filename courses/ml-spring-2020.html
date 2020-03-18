@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CS 360/530: Foundations of Machine Learning</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        <link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    </head>
+    <body class="vscode-light">
+        <h1 id="cs-360530-foundations-of-machine-learning">CS 360/530: Foundations of Machine Learning</h1>
+<p><strong>Spring 2020</strong></p>
+<p>This course gives an introduction to foundations of machine learning and statistical learning. Please see <a href="#schedule-of-classes">Schedule of Classes</a> for topics covered in this course.</p>
+<blockquote>
+<ul>
+<li>Keynote by C. Bishop on <a href="https://www.microsoft.com/en-us/research/video/keynote-talk-model-based-machine-learning/">Model-based machine learning</a>. A must watch!</li>
+<li>Midterm is on Thursday, Feb 27, 2020 at 10am-12pm</li>
+</ul>
+</blockquote>
+<p><strong>Outline</strong></p>
+<ul>
+<li><a href="#cs-360530-foundations-of-machine-learning">CS 360/530: Foundations of Machine Learning</a>
+<ul>
+<li><a href="#instructor">Instructor</a></li>
+<li><a href="#teaching-assistants">Teaching Assistants</a></li>
+<li><a href="#meetings">Meetings</a></li>
+<li><a href="#recommended-books">Recommended Books</a></li>
+<li><a href="#course-eligibility-and-requirements">Course Eligibility and Requirements</a></li>
+<li><a href="#grading-policy-tentative">Grading Policy (tentative)</a></li>
+<li><a href="#academic-honesty">Academic Honesty</a></li>
+<li><a href="#schedule-of-classes">Schedule of Classes</a></li>
+<li><a href="#schedule-of-homeworks-quizzes-exams">Schedule of Homeworks, Quizzes, Exams</a></li>
+<li><a href="#other-relevant-courses-and-resources">Other relevant courses and resources</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="instructor">Instructor</h2>
+<p><a href="https://www.iitgoa.ac.in/~clint">Clint P. George</a> — clint [at] iitgoa [dot] ac [dot] in — Office: F9, New Academic Block A</p>
+<h2 id="teaching-assistants">Teaching Assistants</h2>
+<ul>
+<li>Abhilasha Gupta</li>
+<li>Shruti Shet</li>
+<li>Shivam Kumar</li>
+<li>Nitish Shah</li>
+</ul>
+<h2 id="meetings">Meetings</h2>
+<ul>
+<li>
+<p>Class meetings (<strong>LT3</strong>, Admin Block):</p>
+<ul>
+<li>10:30am-11:25am, Mon</li>
+<li>10:30am-11:25am, Tue</li>
+<li>10:30am-11:25am, Wed</li>
+</ul>
+</li>
+<li>
+<p>Instructor office hours (<strong>F-9</strong>, New Academic Block):</p>
+<ul>
+<li>4-4:30pm, Mon</li>
+<li>2-3pm, Tue</li>
+</ul>
+</li>
+<li>
+<p>TA office hours (<strong>Computing Center</strong>, Admin Block, 1st floor)</p>
+<ul>
+<li><strong>Abhilasha Gupta</strong>, Thu, 3-4pm</li>
+<li><strong>Shivam Kumar</strong>, TBA</li>
+<li><strong>Nitish Shah</strong>, TBA</li>
+</ul>
+</li>
+<li>
+<p>Tutorial/Lab hours (<strong>Computing Center</strong>, Admin Block, 1st floor): 4-4:45pm, Mon</p>
+</li>
+</ul>
+<h2 id="recommended-books">Recommended Books</h2>
+<ol>
+<li>
+<p>Elements of Statistical Learning by <em>Hastie, Tibshirani, and Friedman (2017)</em></p>
+</li>
+<li>
+<p><a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mitchell/ftp/mlbook.html">Machine Learning</a> by <em>Mitchell (2009)</em></p>
+</li>
+<li>
+<p><a href="https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf">Pattern Recognition and Machine Learning</a> (Information Science and Statistics) by <em>Bishop (2010)</em></p>
+</li>
+<li>
+<p>Foundations of Data Science by <em>Blum, Hopcroft, and Kannan (2018)</em></p>
+</li>
+<li>
+<p>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data by <em>Wickham and Grolemund (2016)</em></p>
+</li>
+</ol>
+<h2 id="course-eligibility-and-requirements">Course Eligibility and Requirements</h2>
+<p>This is a <em>core course</em> designed for undergraduate (CS 360; six semester Computer Science and Engineering) and graduate (CS 530) students. Familiarity with the following is recommended.</p>
+<ul>
+<li>
+<p>Basic computer programming—we use R/Python.</p>
+</li>
+<li>
+<p>Probability theory (CS 215, MA 605)</p>
+</li>
+<li>
+<p>Multivariable calculus and linear algebra (MA 105, MA 106, EE 611)</p>
+</li>
+</ul>
+<h2 id="grading-policy-tentative">Grading Policy (tentative)</h2>
+<ul>
+<li>
+<p><em>CS360</em>: Quiz 1 (15%) — Midterm (20%) — Quiz 2 (15%) — Homeworks and Classroom participation (15%) — Final (35%)</p>
+</li>
+<li>
+<p><em>CS530</em>: Quiz 1 (10%) — Midterm (20%) — Quiz 2 (10%) — Projects/Term paper (15%) — Homeworks and Classroom participation (15%) — Final (30%)</p>
+</li>
+</ul>
+<h2 id="academic-honesty">Academic Honesty</h2>
+<p>We expect that every student follows the highest standards of integrity and academic honesty. Copying/sharing code in exams, homeworks, lab sessions are not permitted. See the IIT Goa policy for academic malpractices.</p>
+<h2 id="schedule-of-classes">Schedule of Classes</h2>
+<p>Note: This is a tentative course schedule. It will be updated often. Also, <em>log on to <a href="https://classroom.google.com/">Classroom</a></em> to see lecture slides, additional course materials, and announcements.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">S/N</th>
+<th style="text-align:center">Date</th>
+<th style="text-align:left">Topic</th>
+<th style="text-align:left">Resources</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Jan 07</td>
+<td style="text-align:left">Course Introduction</td>
+<td style="text-align:left"><a href="ml-spring-2020/FML-lecture-01.pdf">lecture 01</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Jan 08</td>
+<td style="text-align:left">Data science basics: data visualization, data transformations</td>
+<td style="text-align:left"><a href="https://www.r-bloggers.com/python-vs-r-for-data-science-whats-the-difference/">R vs. Python</a> for data science; <a href="https://r4ds.had.co.nz/data-visualisation.html">data visualization</a>; <a href="https://r4ds.had.co.nz/transform.html">data transformations</a></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">Jan 13</td>
+<td style="text-align:left">Understanding the data: expected value, variance, covariance, visualizing distributions</td>
+<td style="text-align:left"><a href="https://plato.stanford.edu/entries/paradox-stpetersburg">St. Petersbug paradox</a>; <a href="https://r4ds.had.co.nz/exploratory-data-analysis.html">exploratory data analysis</a></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">Jan 14</td>
+<td style="text-align:left"><a href="https://en.wikipedia.org/wiki/Statistical_hypothesis_testing">Hypothesis testing</a></td>
+<td style="text-align:left"><a href="https://www.youtube.com/watch?v=z0Ry_3_qhDw">video 1</a>; <a href="https://revisionmaths.com/advanced-level-maths-revision/statistics/one-and-two-tailed-tests">one-vs-two tailed tests</a>; <a href="https://statistics.berkeley.edu/computing/r-t-tests"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">t</span></span></span></span>-test example</a></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">Jan 15</td>
+<td style="text-align:left">Hypothesis testing: crtical region, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span></span></span></span>-value, examples</td>
+<td style="text-align:left"><a href="http://www.sthda.com/english/wiki/one-sample-t-test-in-r">one-sample test</a>; <a href="http://www.sthda.com/english/wiki/normality-test-in-r">normality test</a>; <a href="http://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization">boxplots</a></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">Jan 20</td>
+<td style="text-align:left">Supervised learning, linear models, ordinary least-squares</td>
+<td style="text-align:left"><a href="http://cs229.stanford.edu/notes/cs229-notes1.pdf">cs229 notes 1</a></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">Jan 21</td>
+<td style="text-align:left">The least mean square (LMS) algorithm: batch and stochastic gradient approaches; The normal equations for the least squares problem.</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">Jan 22</td>
+<td style="text-align:left">Polynomial curve fitting and similarities with least squares</td>
+<td style="text-align:left"><a href="https://xkcd.com/2048">comic</a>; C. Bishop's <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/05/prml-slides-1.pdf">Slides</a> 3-13</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">Jan 27</td>
+<td style="text-align:left">Linear regression: probabilistic view, Maximum Likelihood Estimate</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">Jan 29</td>
+<td style="text-align:left">Locally weighted linear regression, introduction to logistic regression</td>
+<td style="text-align:left"><a href="http://cs229.stanford.edu/notes/cs229-notes1.pdf">cs229 notes 1; Section 4</a></td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">Feb 03</td>
+<td style="text-align:left">Tutorial on Linear regression and homework 3</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">Feb 04</td>
+<td style="text-align:left">Logistic regression</td>
+<td style="text-align:left"><a href="https://www.machinelearningplus.com/machine-learning/logistic-regression-tutorial-examples-r/">logistic regression tutorial</a>; <a href="http://cs229.stanford.edu/notes/cs229-notes1.pdf">cs229 notes 1; Section 5</a></td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">Feb 04</td>
+<td style="text-align:left"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>-Nearest Neighbours: discussion and workshop by <em>A. Gupta</em>, <em>S. Kumar</em></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:center">Feb 05</td>
+<td style="text-align:left">Discussion on softmax regression, the perceptron algorithm</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:center">Feb 10</td>
+<td style="text-align:left">Discussion on Gradient Descent, the Newton's method</td>
+<td style="text-align:left">Lectures by Gibert Strang on <a href="https://www.youtube.com/watch?v=AeRwohPuUHQ">Gradient Descent</a>; <a href="https://www.youtube.com/watch?v=U0xlKuFqCuI">Newton's method</a></td>
+</tr>
+<tr>
+<td style="text-align:center">16</td>
+<td style="text-align:center">Feb 11</td>
+<td style="text-align:left">Introduction to Neural Networks</td>
+<td style="text-align:left">Example: <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10</a>; reading: <a href="http://cs231n.github.io/linear-classify">linear classifier</a></td>
+</tr>
+<tr>
+<td style="text-align:center">17</td>
+<td style="text-align:center">Feb 12</td>
+<td style="text-align:left">Neural networks, the back-propagation algorithm</td>
+<td style="text-align:left"><a href="http://cs231n.github.io/optimization-2/">cs231n</a> notes</td>
+</tr>
+<tr>
+<td style="text-align:center">18</td>
+<td style="text-align:center">Feb 17</td>
+<td style="text-align:left">The back-propagation algorithm: aspects of implementation</td>
+<td style="text-align:left">Notes by <a href="http://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/readings/L06%20Backpropagation.pdf">R. Grosse</a>, U. Toronto</td>
+</tr>
+<tr>
+<td style="text-align:center">19</td>
+<td style="text-align:center">Feb 18</td>
+<td style="text-align:left">Discussion on the backprop algorithm</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">20</td>
+<td style="text-align:center">Feb 19</td>
+<td style="text-align:left">Introduction to the Convolutional Neural Networks</td>
+<td style="text-align:left">cs231n <a href="http://cs231n.github.io/convolutional-networks/">notes</a></td>
+</tr>
+<tr>
+<td style="text-align:center">21</td>
+<td style="text-align:center">Feb 24</td>
+<td style="text-align:left">Overview of deep autoencoders</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">22</td>
+<td style="text-align:center">Feb 25</td>
+<td style="text-align:left">Generative models</td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schedule-of-homeworks-quizzes-exams">Schedule of Homeworks, Quizzes, Exams</h2>
+<p><em>Log on to <a href="https://classroom.google.com/">Classroom</a></em> to see more details.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">S/N</th>
+<th style="text-align:center">Date</th>
+<th style="text-align:left">Title</th>
+<th style="text-align:left">Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Jan 09</td>
+<td style="text-align:left"><strong>Homework 01</strong>: Getting started with R and data science</td>
+<td style="text-align:left">Due date: Jan 14, 9am</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Jan 14</td>
+<td style="text-align:left"><strong>Homework 02</strong>: CLT and Standard Error</td>
+<td style="text-align:left">Due date: Jan 20, 10am</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">Jan 21</td>
+<td style="text-align:left"><strong>Homework 03</strong>: Linear regression</td>
+<td style="text-align:left">Due date: Jan 27, 10am</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">Jan 28</td>
+<td style="text-align:left"><strong>Quiz 01</strong></td>
+<td style="text-align:left">LT3, Admin Block</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">Feb 08</td>
+<td style="text-align:left"><strong>Homework 04</strong>: Logistic regression</td>
+<td style="text-align:left">Due date: Feb 18, 10am</td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-relevant-courses-and-resources">Other relevant courses and resources</h2>
+<ol>
+<li><a href="http://cs229.stanford.edu">CS229: Machine Learning</a></li>
+<li><a href="http://www.cs.cmu.edu/~tom/mlbook-chapter-slides.html">Machine learning</a> by Tom Mitchel</li>
+<li><a href="https://www.cs.princeton.edu/courses/archive/fall17/cos324">COS 324 - Introduction to Machine Learning</a></li>
+</ol>
+
+    </body>
+    </html>
