@@ -6,6 +6,7 @@ This course gives an introduction to foundations of machine learning and statist
 
 > - Keynote by C. Bishop on [Model-based machine learning](https://www.microsoft.com/en-us/research/video/keynote-talk-model-based-machine-learning/). A must watch!
 > - Midterm is on Thursday, Feb 27, 2020 at 10am-12pm  
+> - Lectures will be conducted online from March 16, 2020 to March 31, 2020. Please check the [Classroom](https://classroom.google.com/) for more details.  
 
 **Outline**
 - [CS 360/530: Foundations of Machine Learning](#cs-360530-foundations-of-machine-learning)
