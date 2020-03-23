@@ -110,7 +110,10 @@ Note: This is a tentative course schedule. It will be updated often. Also, *log 
 |  20   | Feb 19 | Introduction to the Convolutional Neural Networks | cs231n [notes](http://cs231n.github.io/convolutional-networks/) |
 |  21   | Feb 24 | Overview of deep autoencoders |  |
 |  22   | Mar 16 | Generative models |  |
-
+|  23   | Mar 17 | Gaussian discriminant analysis | [Andrew Ng's notes](http://cs229.stanford.edu/notes/cs229-notes2.pdf) (Section 1) |
+|  24   | Mar 23 | Gaussian discriminant analysis vs logistic regression |  |
+|  25   | Mar 24 | Bias/variance tradeoff |  |
+|  26   | Mar 25 | Model selection |  |
 
 ## Schedule of Homeworks, Quizzes, Exams  
 
