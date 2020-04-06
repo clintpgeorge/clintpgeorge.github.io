@@ -84,7 +84,7 @@ We expect that every student follows the highest standards of integrity and acad
 
 ## Schedule of Classes
 
-Note: This is a tentative course schedule. It will be updated often. Also, *log on to [Classroom](https://classroom.google.com/)* to see lecture slides, additional course materials, and announcements.
+Note: This is a tentative course schedule. It will be updated often. Also, *log on to [Classroom](https://classroom.google.com/)* to see lecture slides,videos, additional course materials, and announcements.
 
 |  S/N  |  Date  | Topic                                                                                                                                | Resources                                                                                                                                                                                                                                                                |
 | :---: | :----: | :----------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -114,6 +114,18 @@ Note: This is a tentative course schedule. It will be updated often. Also, *log 
 |  24   | Mar 23 | Gaussian discriminant analysis vs logistic regression |  |
 |  25   | Mar 24 | Bias/variance tradeoff |  |
 |  26   | Mar 25 | Model selection | Andrew Ng's [lecture](https://www.youtube.com/watch?v=0kWZoyNRxTY) (from 35th minute); [more](https://www.youtube.com/watch?v=MyBSkmUeIEs) |
+|  27   | Mar 30 | Feature selection: forward/backward, filter-based approaches | Andrew Ng's [notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf) |
+|  28   | Mar 31 | Probabilistic inference: MLE, MAP estimates |  |
+|  29   | Apr 01 | Probabilistic mixtures and introduction to the EM algorithm  | Andrew Ng's [notes](http://cs229.stanford.edu/notes/cs229-notes7b.pdf) |
+|  30   | Apr 07 | The EM algorithm | Andrew Ng's [notes](http://cs229.stanford.edu/notes/cs229-notes8.pdf) |
+|  31   | Apr 08 | The EM algorithm (continued) |  |
+|  32   | Apr 13 | Introduction to text mining and natural language processing  |  |
+|  33   | Apr 14 | Principal Component Analysis |  |
+|  34   | Apr 15 | Singualar Value Decomposition and applications in text data |  |
+|  35   | Apr 20 | Probabilistic Topic Models|  |
+|  36   | Apr 21 | Probabilistic Topic Models (continued)|  |
+|  37   | Apr 22 | [ADD] Support vector machines | Prof. Patrick Winston's [lecture](https://www.youtube.com/watch?v=_PwhiWxHK8o) |
+|  38   | Apr 27 | [ADD] Graduate seminars | |
 
 ## Schedule of Homeworks, Quizzes, Exams  
 
@@ -126,6 +138,10 @@ Note: This is a tentative course schedule. It will be updated often. Also, *log 
 |   3   | Jan 21 | **Homework 03**: Linear regression                       | Due date: Jan 27, 10am |
 |   4   | Jan 28 | **Quiz 01**                                              | LT3, Admin Block       |
 |   5   | Feb 08 | **Homework 04**: Logistic regression                     | Due date: Feb 18, 10am |
+|   6   | Mar 31 | **Homework 05**: Neural networks                         | Due date: Apr 08, 9am |
+|   7   | Mar 27 | **Course project**: [CORD-19-research-challenge](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)                         | Due date: Finals week |
+
+
 
 ## Other relevant courses and resources
 
