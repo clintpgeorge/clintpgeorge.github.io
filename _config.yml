@@ -1,3 +1,12 @@
 theme: jekyll-theme-primer
 title: Clint P. George
 description: Welcome to Clint's webpage! 
+
+github:
+  private: true
+  license:
+    name: CC BY 4.0
+  source:
+    branch: "master"
+    path: "/"
+  repository_url: "https://github.com/clintpgeorge/clintpgeorge.github.io"
