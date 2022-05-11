@@ -181,3 +181,7 @@ build/
 
 # Local History for Visual Studio Code
 .history/
+
+# Mac related
+
+.DS_Store
